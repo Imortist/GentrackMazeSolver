@@ -82,8 +82,8 @@ public class MazeSolver {
     // check if maze can be solved
     private boolean canBeSolved(int i, int j) {
         //border wrapping
-        if(i > maze.length) i = 0;
-        if(j > maze.length) j = 0;
+        if(i >= maze.length) i = 0;
+        if(j >= maze.length) j = 0;
         if(i < 0) i = maze.length -1;
         if(j < 0) j = maze.length -1;
 
